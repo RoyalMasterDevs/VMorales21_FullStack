@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nuestro negocio se enfoca en ropa de alta calidad">
+  <link rel="stylesheet" href="./clase1.css">
+
+  <title>Mi primer página HTML</title>
+  <title>Pagina de Ropa</title>
+  <title>Contacto</title>
+  <title>Nosotros</title>
+</head>
+
+<body>
+  <header>
+    <div id="ejemplo">
+      <!-- HEADER -->
+      <!-- SEO. Tus páginas solo pueden tener 1 h1 cada una -->
+      <!-- SEO. Puedes tener varios h2-h6, pero deben ir en orden -->
+      <h1>Esto es un h1</h1>
+      <h2>Esto es un h2</h2>
+      <h3>Esto es un h3</h3>
+      <h4>Esto es un h4</h4>
+      <h5>Esto es un h5</h5>
+      <h6>Esto es un h6</h6>
+    </div>
+    <!-- NAVEGACION -->
+    <nav>
+      <ul>
+        <!-- LISTA DESORGANIZADA -->
+        <!-- Elementos Links -->
+        <li>
+          <a href="./index.html"> Inicio </a>
+        </li>
+        <li><a href="https://unsplash.com/s/photos/purple-space">Unsplash</a> </li>
+        <li><a href="./reproductor/index.html">Reproductor</a></li>
+      </ul>
+      <!-- LISTA ORDENADA -->
+      <ol>
+        <li>2</li>
+        <li>1</li>
+        <li>4</li>
+        <li>3</li>
+      </ol>
+    </nav>
+  </header>
+  <main>
+    <div id="wrapper">
+
+      <section class="prueba">
+        <p>Este es
+          <span> un Parrafo</span>
+        </p>
+        <p>Parrafo 2</p>
+        <p>Parrafo 3</p>
+      </section>
+
+      <div class="prueba">Esto es main</div>
+
+      <h2>Esto es un h2</h2>
+      <table style="border: 2px solid white;">
+        <th>Esto es el Header de la tabla</th>
+        <tbody>
+          <!-- table row -->
+          <tr>
+            <td>Esto es una File</td>
+          </tr>
+          <tr>
+            <td class="prueba">Esto es suna Celda</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+  <footer style="background: green;">
+    <div>Esto es el Footer</div>
+    <section>
+      <!-- FORMULARIO -->
+      <!-- ESTO ES UN COMENTARIO -->
+
+      <form action="#" method="POST">
+        <!-- ETIQUETAS Y ENTRADAS -->
+        <div>
+          <label for="name">TU NOMBRE</label>
+          <input id="name" type="text" name="nombre">
+        </div>
+        <br>
+        <br>
+        <div>
+          <label for="telefono">TU TELEFONO</label>
+          <input id="telefono" type="number" name="telefono">
+        </div>
+        <div>
+          <label for="Ciudad">Tu Ciudad</label>
+          <input id="Ciudad" type="text" name="ciudad">
+        </div>
+        <div>
+          <label for="message">Tu mensaje</label>
+          <textarea id="message" name="mensaje" cols="30" rows="10"></textarea>
+        </div>
+
+      </form>
+    </section>
+  </footer>
+</body>
+
+</html>

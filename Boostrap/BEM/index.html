@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina  responsiva</title>
+</head>
+
+<body style="text-align: center;">
+    
+    <!-- BEM. BLOQUE ELEMENTO MODIFICADOR     -->
+    <div class="card" >
+        <div class="card__title">
+            <h1>Este es un titulo</h1>
+        </div>
+        <div class="card__body">
+            <img class="card__img" src="./img2.jpg" alt="img_body">
+            <h3 class="body__title">Titulo de la Imagen</h3>
+        </div>
+        <div class="card__footer">
+            <h5>Todos los Derechos reservados</h5>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card__title">
+            <h1>Este es un titulo</h1>
+        </div>
+        <div class="card__body">
+            <img class="card__img" src="./img2.jpg" alt="img_body">
+            <h3 class="body__title">Titulo de la Imagen</h3>
+        </div>
+        <div class="card__footer">
+            <h5>Todos los Derechos reservados</h5>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card__title">
+            <h1>Este es un titulo</h1>
+        </div>
+        <div class="card__body">
+            <img class="card__img" src="./img2.jpg" alt="img_body">
+            <h3 class="body__title">Titulo de la Imagen</h3>
+        </div>
+        <div class="card__footer">
+            <h5>Todos los Derechos reservados</h5>
+        </div>
+    </div>
+
+    <div class="container">
+        <a class="tarjeta" href="#"></a>
+        <!-- <h2>Titulo de tarjeta</h2> -->
+
+        <a class="tarjeta" href="#"></a>
+        <!-- <h2>Titulo de tarjeta</h2> -->
+
+        <a class="tarjeta" href="#"></a>
+        <!-- <h2>Titulo de tarjeta</h2> -->
+
+        <a class="tarjeta" href="#"></a>
+        <!-- <h2>Titulo de tarjeta</h2> -->
+
+        <a class="tarjeta" href="#"></a>
+        <!-- <h2>Titulo de tarjeta</h2> -->
+
+
+    </div>
+
+
+    <style>
+        body {
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 5%, rgba(9, 66, 121, 1) 51%, rgba(0, 212, 255, 1) 100%);
+            color: white;
+            display: flex;
+            /*para crear un despliegue flexible*/
+            flex-direction: column;
+            /*para cambiar la dirección en la que los elementos flexibles dentro de un contenedor se organizan, en este  caso en  columna*/
+            justify-content: space-between;
+            /*para  dar  el mismo espacio entre los elementos*/
+
+        }
+
+        .card {
+            border: solid white 2px;
+            border-radius: 15px;
+            width: 80%;
+            height: 600px;
+            /*cambia de  300  a 600*/
+            margin: 10px;
+            /*para agregar un margen de  10px*/
+            display: flex;
+            /*para  un despliegue flexible*/
+            flex-direction: column;
+            /*los elemntos de  acomodan en columnas*/
+            justify-content: space-between;
+            /*el mismo espacio entre los  elementos*/
+        }
+
+        .card__title {
+            text-align: center;
+            margin-top: -20px;
+        }
+
+        .card__body {
+            width: 100%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card__img {
+
+            width: 70%;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .body__title {
+            margin-top: -2px;
+            margin-bottom: 20px;
+        }
+
+        .card__footer {
+            width: 20%;
+            margin-top: -20px;
+            text-align: center;
+        }
+
+        @media (max-width: 360px) {
+            .card {
+                width: 200px;
+            }
+
+        }
+
+        @media (max-width: 760px) {}
+
+        /* INSTRUCCIONES. Los elementos deben alinearse de manera horizontal en dispositivo escritorio, y de manera vertical en dispositivos moviles, ademas de acomodar todos sus elementos dentro del bloque Card */
+        .container {
+            display: flex;
+            overflow-x: scroll;
+            max-width: 100%;
+            height: 222px;
+            scroll-snap-type: x mandatory;
+            scroll-padding: 25px;
+            column-gap: 10px;
+            margin-top: 20px;
+        }
+
+        .tarjeta {
+            display: block;
+            padding: 50px;
+            text-align: center;
+            scroll-snap-align: start;
+            border-radius: 50px;
+            width: 200px;
+            height: 196px;
+
+        }
+
+        .tarjeta:nth-child(1) {
+            background-image: url(./tarjeta1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+
+        }
+
+        .tarjeta:nth-child(2) {
+            background-image: url(https://imgs.search.brave.com/PKg_Gh6aJqc_-R_QQZ-LWKwjFudauNujXY_onkyqgf0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/aGlsbHNwZXQuY29t/L2NvbnRlbnQvZGFt/L2NwLXNpdGVzL2hp/bGxzL2hpbGxzLXBl/dC9nbG9iYWwvYXJ0/aWNsZXMvZG9nLWNh/cmUvZG9nLWJyZWVk/cy9pbWdfRG9nQnJl/ZWQtQm94ZXIuanBn);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left top;
+
+        }
+
+        .tarjeta:nth-child(3) {
+            background-image: url(./tarjeta1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+
+        }
+
+        .tarjeta:nth-child(4) {
+            background-image: url(./tarjeta1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+
+        }
+
+        .tarjeta:nth-child(5) {
+            background-image: url(./tarjeta1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+
+        }
+
+        .tarjeta:nth-child(5):hover {
+            background-color: rgba(0, 0, 0, 1);
+            transition: 1s ease;
+            -webkit-filter: blur(10px);
+            cursor: pointer;
+        }
+    </style>
+
+</body>
+
+</html>

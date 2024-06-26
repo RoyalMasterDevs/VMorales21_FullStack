@@ -1,0 +1,57 @@
+:root{
+    --fondoDeColor: blue;
+    --colorDeLetra: rgb(210, 25, 25);
+}
+
+/* Cascade Style Sheet */
+body{
+    background-color: blue !important;
+    color: var(--colorDeLetra);
+}
+
+header {
+    /* background-color: rgb(148, 21, 21); */
+    background-color: var(--fondoDeColor);
+    color: white;
+    font-size: 10px;
+
+}
+
+/* ESPECIFICIDAD */
+#ejemplo {
+    background-color: yellow;
+    color: black;
+}
+
+#wrapper {}
+
+/* HERENCIA */
+p {
+    color: green;
+}
+/* CASCADA */
+body{
+    background-color: red;
+}
+
+.prueba{
+    font-size: 20px;
+    color: black;
+    padding: 7px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+/* SECCION MAIN */
+
+ul>li{
+    text-transform: uppercase;
+    color: black;
+}
+ul>li>a{
+    color: rgb(179, 173, 173);
+    text-decoration: none;
+    list-style-type: none !important;
+}
+/* SECCION FOOTER */
