@@ -1,0 +1,22 @@
+.container{
+    text-align: left;
+}
+H3{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px; 
+    color: white; 
+}
+body{
+margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/foto4.jpg");
+    background-size: cover;
+    /* Asegura que la imagen cubra toda la ventana */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+}

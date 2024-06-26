@@ -1,0 +1,114 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    position: relative;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+#menu-bar {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.bar {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Animación de la hamburguesa */
+.change #bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change #bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Menú desplegable */
+.hamburger {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.change {
+    display: block;
+}
+
+.hamburger ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hamburger ul li {
+    margin-bottom: 10px;
+}
+
+.hamburger a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 8px 16px;
+}
+
+.menu-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.change-bg {
+    display: block;
+}
+
+/* styles.css */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* Opcional: para ocultar cualquier desplazamiento */
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-screen-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Asegura que la imagen cubra toda la ventana */
+}

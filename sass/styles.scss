@@ -1,0 +1,12 @@
+@use 'navbar';
+@use 'reset';
+@use 'variables';
+@use 'animaciones';
+
+:root{
+    --primary: #{variables.$primary};
+}
+
+h2{
+    color: var(--primary);
+}

@@ -1,0 +1,116 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+}
+.margin {
+    background-color: blue;
+    border-radius: 7px;
+    width: 100%;
+
+}
+
+.border {
+    background-color: green;
+}
+
+.padding {
+    background-color: red;
+}
+
+p {
+    background-color: white;
+}
+
+body{
+    background-color: black;
+}
+#song-name,#song-author{
+    font-size: 30px;
+    color: rgb(3, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+#player-current-time,#player-duration{
+    font-size: 20px;
+    color: blue;
+    font-style: oblique;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#song-image{
+width:500px;
+height:350px;
+background-color: black;
+}
+.audio-player{
+text-align: center;
+}
+
+
+.controls{
+    text-align: center;
+    background-color: rgb(124, 151, 184);
+    padding: 20px;
+}
+
+.song-info{
+text-align: center;
+background-color:rgb(245, 243, 234);
+}
+.progress{
+text-align: center;
+background-color: rgb(255, 255, 252);
+display: flex;
+align-items: center;
+    /* Centra los elementos verticalmente */
+}
+
+#player-current-time,
+#player-duration {
+    margin: 0 10px;
+    /* Espacio entre los elementos */
+}
+
+#player-progress {
+    flex-grow: 1;
+    /* Permite que el input se expanda para ocupar el espacio disponible */
+}
+
+/* Media queries para responsividad */
+@media (min-width: 600px) {
+    .song-info {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #song-details {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+
+    .audio-player {
+        padding: 50px 40px;
+    }
+}
+
+@media (min-width: 900px) {
+
+    #song-name,
+    #song-author {
+        font-size: 35px;
+    }
+
+    #player-current-time,
+    #player-duration {
+        font-size: 25px;
+    }
+
+    .audio-player {
+        padding: 50px 60px;
+    }
+}
